@@ -1,0 +1,55 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.dashboard {
+  width: max(20vw, 300px);
+  grid-area: 1 / 1 / 7 / 2;
+  background-color: dodgerblue;
+}
+
+.logo {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+}
+
+.main-nav {
+  margin-bottom: 50px;
+}
+
+li {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.header {
+  grid-area: 1 / 2 / 2 / 5;
+}
+
+.main-content {
+  grid-area: 2 /2 / 7 /4;
+}
+
+.side-container {
+  grid-area: 4 / 4 / 6;
+}
+
+.icon {
+  height: 30px;
+  width: auto;
+}
+
+.icon-card {
+  height: 20px;
+  width: auto;
+}
